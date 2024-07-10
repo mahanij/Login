@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EducareBook Login</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-pink-100 flex items-center justify-center min-h-screen">
+    <div
+      class="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row w-full max-w-4xl"
+    >
+      <div class="md:w-1/2 p-6">
+        <h2 class="text-3xl font-bold text-black">Login now</h2>
+        <p class="mt-2 text-gray-600">Hi, Welcome back 👋</p>
+        <button
+          class="mt-6 w-full bg-pink-300 text-white py-2 rounded-lg flex items-center justify-center"
+        >
+          <img
+            src="https://www.google.com/favicon.ico"
+            alt="Google"
+            class="mr-2 w-5 h-5"
+          />
+          Login with Google
+        </button>
+        <div class="mt-4 flex items-center">
+          <div class="flex-grow h-px bg-gray-300"></div>
+          <span class="flex-shrink text-gray-500 mx-4"
+            >or Login with Email</span
+          >
+          <div class="flex-grow h-px bg-gray-300"></div>
+        </div>
+        <form class="mt-6">
+          <div>
+            <label for="email" class="block text-gray-700">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full mt-1 p-2 border border-gray-300 rounded-lg bg-pink-100"
+              placeholder="Enter your email id"
+            />
+          </div>
+          <div class="mt-4">
+            <label for="password" class="block text-gray-700">Password</label>
+            <div class="relative">
+              <input
+                type="password"
+                id="password"
+                class="w-full mt-1 p-2 border border-gray-300 rounded-lg bg-pink-100"
+                placeholder="Enter your password"
+              />
+              <span
+                class="absolute inset-y-0 right-3 flex items-center text-gray-500 cursor-pointer"
+              >
+              <i class="fa-solid fa-eye-slash"></i>
+              </span>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <label class="flex items-center">
+              <input type="checkbox" class="form-checkbox text-blue-600" id="submit"/>
+              <span class="ml-2 text-gray-700">Remember Me</span>
+            </label>
+            <a href="#" class="text-blue-600">Forgot Password?</a>
+          </div>
+          <input
+            type="submit"
+            class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg"
+          >
+            Login
+          </input>
+        </form>
+        <p class="mt-4 text-center text-gray-700">
+          Not registered yet?
+          <a href="#" class="text-pink-500"
+            >Create an account <span class="text-blue-600">SignUp</span></a
+          >
+        </p>
+      </div>
+      <div class="hidden md:flex md:w-1/2 items-center justify-center p-6">
+        <img
+          src="/images/rightPartImg.png"
+          alt="Illustration"
+          class="max-w-full"
+        />
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
